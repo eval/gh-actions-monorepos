@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'C/**'
+      - '.github/workflows/**'
     branches:
       - master
 jobs:

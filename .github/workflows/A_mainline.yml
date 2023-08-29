@@ -3,9 +3,9 @@ on:
   push:
     paths:
       - 'A/**'
+      - '.github/workflows/**'
     branches:
       - master
-
 jobs:
   Testing:
     runs-on: ubuntu-latest
