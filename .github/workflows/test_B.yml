@@ -1,5 +1,8 @@
 name: Testing project B
-on: [push]
+on:
+  push:
+    paths:
+      - 'B/**'
 jobs:
   Testing:
     runs-on: ubuntu-latest
