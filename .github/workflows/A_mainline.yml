@@ -10,6 +10,7 @@ jobs:
   Test:
     uses: ./.github/workflows/A_pr.yml
   Report:
+    needs: [Test]
     runs-on: ubuntu-latest
     steps:
       - run: echo Reporting
