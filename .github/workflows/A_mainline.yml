@@ -8,7 +8,7 @@ on:
       - master
 jobs:
   Test:
-    uses: ./github/workflows/A_pr@master
+    uses: ./.github/workflows/A_pr@master
   Report:
     runs-on: ubuntu-latest
     steps:
