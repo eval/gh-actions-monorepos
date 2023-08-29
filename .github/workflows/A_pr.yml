@@ -1,5 +1,6 @@
 name: A/pull_request
 on:
+  workflow_call:
   pull_request:
     paths:
       - 'A/**'
