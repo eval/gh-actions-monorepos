@@ -7,12 +7,9 @@ on:
     branches:
       - master
 jobs:
-  Testing:
+  Test:
+    uses: ./github/workflows/A_pr
+  Report:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v3
-      - run: |
-          cd A
-          ./test
-      - run: echo $PWD
+      - run: echo Reporting

@@ -1,0 +1,16 @@
+name: A/pull_request
+on:
+  pull_request:
+    paths:
+      - 'A/**'
+      - '.github/workflows/**'
+jobs:
+  Testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: |
+          cd A
+          ./test
+      - run: echo $PWD
