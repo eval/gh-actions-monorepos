@@ -1,0 +1,12 @@
+name: Testing project C
+on: [push]
+jobs:
+  Testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: |
+          cd C
+          ./test
+      - run: echo $PWD

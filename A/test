@@ -1,0 +1,1 @@
+echo Testing A && test $((`date +%s` % 2)) -eq 0
