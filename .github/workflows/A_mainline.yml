@@ -1,8 +1,11 @@
-name: Testing project C
+name: A/mainline
 on:
   push:
     paths:
-      - 'C/**'
+      - 'A/**'
+    branches:
+      - master
+
 jobs:
   Testing:
     runs-on: ubuntu-latest
@@ -10,6 +13,6 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - run: |
-          cd C
+          cd A
           ./test
       - run: echo $PWD

@@ -1,8 +1,10 @@
-name: Testing project B
+name: B/mainline
 on:
   push:
     paths:
       - 'B/**'
+    branches:
+      - master
 jobs:
   Testing:
     runs-on: ubuntu-latest
