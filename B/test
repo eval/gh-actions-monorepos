@@ -1,1 +1,2 @@
-echo Testing B && test $((`date +%s` % 2)) -eq 0
+echo Testing B
+test $((`date +%s` % 2)) -eq 0
